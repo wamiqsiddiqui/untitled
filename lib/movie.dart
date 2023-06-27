@@ -35,7 +35,7 @@ class _MovieState extends State<Movie> {
                       fit: BoxFit.fill),
                 ),
                 Positioned(
-                  bottom: 20,
+                  bottom: 10,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

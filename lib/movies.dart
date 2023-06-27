@@ -15,7 +15,7 @@ class _MoviesState extends State<Movies> {
       appBar: AppBar(
         leading: Image.asset("assets/netflix.jpg"),
         backgroundColor: Colors.transparent,
-        elevation: 0,
+        elevation: 2,
       ),
       body: SingleChildScrollView(
         child: Column(
