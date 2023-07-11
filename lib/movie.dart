@@ -19,7 +19,7 @@ class _MovieState extends State<Movie> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         actions: [Icon(Icons.favorite)],
-        backgroundColor: Colors.transparent,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         leading: Image.asset("assets/netflix.jpg"),
       ),
       body: SingleChildScrollView(
@@ -50,7 +50,7 @@ class _MovieState extends State<Movie> {
                               )),
                           Text(
                             "My List",
-                            style: TextStyle(color: Colors.white),
+                            style: Theme.of(context).textTheme.labelSmall,
                           )
                         ],
                       ),
@@ -65,8 +65,8 @@ class _MovieState extends State<Movie> {
                                 color: Colors.white,
                               )),
                           Text(
-                            "Info",
-                            style: TextStyle(color: Colors.white),
+                            "Infossssss",
+                            style: Theme.of(context).textTheme.displayMedium,
                           )
                         ],
                       ),

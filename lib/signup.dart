@@ -34,7 +34,6 @@ class _SignUpState extends State<SignUp> {
                     return null;
                   }
                 },
-                decoration: const InputDecoration(border: OutlineInputBorder()),
               ),
               const SizedBox(
                 height: 20,
@@ -50,7 +49,7 @@ class _SignUpState extends State<SignUp> {
                     return null;
                   }
                 },
-                decoration: const InputDecoration(border: OutlineInputBorder()),
+                // decoration: const InputDecoration(border: OutlineInputBorder()),
               ),
               const SizedBox(
                 height: 20,
@@ -65,7 +64,7 @@ class _SignUpState extends State<SignUp> {
                     return null;
                   }
                 },
-                decoration: const InputDecoration(border: OutlineInputBorder()),
+                // decoration: const InputDecoration(border: OutlineInputBorder()),
               ),
               ElevatedButton(
                   onPressed: () {
