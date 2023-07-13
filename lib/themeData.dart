@@ -22,7 +22,6 @@ final ThemeData myTheme = ThemeData(
     padding: EdgeInsets.symmetric(
         vertical: 12, horizontal: 16), // Customize the button padding
   ),
-  fontFamily: 'Inspiration', // The default font family
   appBarTheme: AppBarTheme(backgroundColor: Colors.yellow),
   textTheme: TextTheme(
     bodySmall: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),

@@ -17,8 +17,11 @@ final ThemeData themeData = ThemeData(
       900: Colors.red.shade900
     },
   ),
-  fontFamily: 'Inspiration', // The default font family
+  fontFamily: "Inspiration",
   primaryColor: Colors.red,
+  appBarTheme: AppBarTheme(
+    elevation: 0,
+  ),
   primaryColorLight: Color(0x1aF5E0C3),
   primaryColorDark: Color(0xff936F3E),
   canvasColor: Color(0xffE09E45),
@@ -32,8 +35,9 @@ final ThemeData themeData = ThemeData(
       fontSize: 10,
     ),
     displayMedium: TextStyle(color: Colors.yellow, fontSize: 10),
-    bodySmall: TextStyle(color: Colors.red, fontSize: 10),
+    bodyLarge: TextStyle(color: Colors.white, fontSize: 20),
   ),
+  iconTheme: IconThemeData(color: Colors.blue, size: 60),
   inputDecorationTheme: InputDecorationTheme(
     enabledBorder: OutlineInputBorder(
         borderSide: BorderSide(color: Colors.green),

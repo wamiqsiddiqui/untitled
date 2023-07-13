@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Movies extends StatefulWidget {
-  const Movies({super.key});
+  final String movieTitle;
+  const Movies({super.key, required this.movieTitle});
 
   @override
   State<Movies> createState() => _MoviesState();
@@ -13,14 +14,20 @@ class _MoviesState extends State<Movies> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        title: Text(widget.movieTitle),
         leading: Image.asset("assets/netflix.jpg"),
-        backgroundColor: Colors.transparent,
+        // backgroundColor: Colors.transparent,
         elevation: 10,
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
             Image.asset("assets/strangerthings.jpg"),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text("Go Back")),
             SizedBox(
               height: 250,
               child: ListView.builder(

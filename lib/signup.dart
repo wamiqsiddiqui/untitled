@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
+import 'Routes.dart';
+import 'arguments.dart';
+
 class SignUp extends StatefulWidget {
-  const SignUp({super.key});
+  final String title;
+  const SignUp({super.key, required this.title});
 
   @override
   State<SignUp> createState() => _SignUpState();
@@ -16,7 +20,10 @@ class _SignUpState extends State<SignUp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Sign Up"),
+        title: Text(
+          "Sign Up",
+          style: Theme.of(context).textTheme.bodyLarge,
+        ),
       ),
       body: Form(
         key: _formKey,
@@ -24,6 +31,7 @@ class _SignUpState extends State<SignUp> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
+              Icon(Icons.password),
               TextFormField(
                 controller: nameController,
                 validator: (String? value) {
@@ -68,10 +76,12 @@ class _SignUpState extends State<SignUp> {
               ),
               ElevatedButton(
                   onPressed: () {
-                    bool isValid = _formKey.currentState!.validate();
-                    print("IS Form Valid = $isValid");
+                    Navigator.pushNamed(context, Routes.moviesRoute,
+                        arguments: MovieScreenArguments(title: "Hello"));
                   },
-                  child: const Text("Sign Up"))
+                  child: const Text(
+                    "Sign Up",
+                  ))
             ],
           ),
         ),
